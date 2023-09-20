@@ -21,3 +21,10 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/
+
+plugin:
+  platforms:
+    android:
+      pluginClass: SlideRatingDialog
+    ios:
+      pluginClass: SlideRatingDialog

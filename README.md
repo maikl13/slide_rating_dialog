@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 
 ## Contributions and Support
-We welcome your feedback and contributions to make Slide Rating Dialog even better. If you encounter any issues or have ideas for improvements, please open an issue on our GitHub repository. [GitHub repository](https://github.com/Zee604/slide_rating_dialog.git).
+We welcome your feedback and contributions to make Slide Rating Dialog even better. If you encounter any issues or have ideas for improvements, please open an issue on our GitHub repository. [Open Issue](https://github.com/Zee604/slide_rating_dialog.git).
 
 ## License
 **This project is licensed under the [MIT License](https://opensource.org/license/mit/).**
