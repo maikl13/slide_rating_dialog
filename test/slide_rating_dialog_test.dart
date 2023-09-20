@@ -1,5 +1,3 @@
-import 'package:slide_rating_dialog/slide_rating_dialog.dart';
-import 'package:test/test.dart';
 
 void main() {
  /* group('A group of tests', () {

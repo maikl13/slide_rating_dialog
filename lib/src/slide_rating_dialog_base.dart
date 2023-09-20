@@ -177,9 +177,6 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                       affinity: Axis.horizontal,
                       maxSimultaneousDrags: 1,
                       onDragUpdate: (valo) {
-                        print("Local ====>>>"+valo.localPosition.toString());
-                        print("Global ====>>>"+valo.globalPosition.toString());
-
                         if(valo.globalPosition.dx <= 101.0){
                           setState(() {
                             starCount = 1;
@@ -204,7 +201,6 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
 
                       },
                       onDragEnd: (val){
-                        print("End ====>>>"+val.offset.toString());
                         if(val.offset.dx <= 40.0){
                           setState(() {
                             dxSet = 0.0;
