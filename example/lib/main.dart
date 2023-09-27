@@ -59,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onRatingChanged: (rating){
                         print(rating.toString());
                       },
+
                       buttonOnTap: (){
                         // Do your Business Logic here;
                         Navigator.pop(context);

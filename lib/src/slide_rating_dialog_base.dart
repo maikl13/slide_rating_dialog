@@ -63,11 +63,12 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
         borderRadius: BorderRadius.circular(20.0)
       ),
       child: SizedBox(
-        height: widget.cancelButton ? size.height * 0.6 : size.height * 0.57,
+       // height: widget.cancelButton ? size.height * 0.6 : size.height * 0.57,
         width: size.width * 0.9,
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               widget.cancelButton ? Align(
                 alignment: Alignment.topRight,
@@ -301,7 +302,8 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                         fontWeight: FontWeight.w600
                       ),),
                 ),
-              )
+              ),
+              const SizedBox(height: 10.0, width: 0.0,),
 
             ],
           ),
