@@ -23,6 +23,9 @@ class SlideRatingDialog extends StatefulWidget {
   /// Dialog Cancel button
   final bool cancelButton;
 
+  /// Button Title
+  final String buttonTitle;
+
 
 
 
@@ -34,6 +37,7 @@ class SlideRatingDialog extends StatefulWidget {
     this.buttonColor = Colors.deepPurpleAccent,
     this.cancelButton = true,
     required this.buttonOnTap,
+    this.buttonTitle = "Submit"
   }) : super(key: key);
 
   @override
@@ -82,6 +86,7 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                 ),
               ) : SizedBox(),
               Text(widget.title,
+                textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 28.0,
                     color: Colors.black,
@@ -89,6 +94,7 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                   ),),
               const SizedBox(height: 12.0, width: 0.0,),
               Text(widget.subTitle,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 16.0,
                     color: Colors.black,
@@ -110,7 +116,7 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                 children: [
                   Container(
                     width:  size.width * 0.8,
-                    height: 60.0,
+                    height: 64.0,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30.0),
                         color: Color(0xFFF1F5F8)
@@ -118,7 +124,7 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                   ),
                   AnimatedContainer(
                     width: getWidth(context, starCount),
-                    height: 60.0,
+                    height: 62.0,
                     duration: Duration(milliseconds: 300),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30.0),
@@ -127,7 +133,7 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                   ),
                   Container(
                     width: size.width * 0.8,
-                    height: 60.0,
+                    height: 62.0,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30.0),
                         color: Colors.transparent
@@ -176,6 +182,7 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                     child: Draggable(
                       axis: Axis.horizontal,
                       affinity: Axis.horizontal,
+
                       maxSimultaneousDrags: 1,
                       onDragUpdate: (valo) {
                         if(valo.globalPosition.dx <= 101.0){
@@ -194,7 +201,7 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                           setState(() {
                             starCount = 4;
                           });
-                        }else if(valo.globalPosition.dx > 299.0 ){
+                        }else if(valo.globalPosition.dx > 330.0 ){
                           setState(() {
                             starCount = 5;
                           });
@@ -226,13 +233,13 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                             starCount = 3;
                           });
                           widget.onRatingChanged!(3);
-                        } else if(val.offset.dx >= 170.0 && val.offset.dx <= 220.0){
+                        } else if(val.offset.dx >= 170.0 && val.offset.dx <= 240.0){
                           setState(() {
                             dxSet = 220.0 - 39.0;
                             starCount = 4;
                           });
                           widget.onRatingChanged!(4);
-                        } else if(val.offset.dx >= 225.0 && val.offset.dx <= 282.0){
+                        } else if(val.offset.dx >= 245.0 && val.offset.dx <= 282.0){
                           setState(() {
                             dxSet = 282.0 - 39.0;
                             starCount = 5;
@@ -295,7 +302,7 @@ class _SlideRatingDialogState extends State<SlideRatingDialog> {
                       color: widget.buttonColor,
                   ),
                   alignment: Alignment.center,
-                  child: Text("Submit",
+                  child: Text(widget.buttonTitle,
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.white,

@@ -54,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 showDialog(
                     context: context,
                     barrierDismissible: true,
+
                     builder: (BuildContext cont) =>
                         SlideRatingDialog(
                       onRatingChanged: (rating){
@@ -65,6 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.pop(context);
 
                       },
+                          buttonTitle: "Rate Us",
                     ));
               },
               child: Container(

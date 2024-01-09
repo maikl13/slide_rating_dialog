@@ -8,7 +8,9 @@ The Slide Rating Dialog Flutter package provides a beautiful and customizable wi
 <img src="https://i.postimg.cc/hPWn8DfY/s2.png" width="300" />
 
 [comment]: <> (<img src="https://i.postimg.cc/pXnSC8gQ/s3.png" width="300" />)
+## Video
 
+<img src="https://i.postimg.cc/qv33mkFk/sample-video-rating-dialog.gif" width="300" />
 
 
 ## Features
