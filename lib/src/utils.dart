@@ -5,13 +5,13 @@ import 'package:flutter/cupertino.dart';
 double getWidth(BuildContext context, int a){
   switch (a){
     case 1:
-      return MediaQuery.of(context).size.width * 0.18;
+      return MediaQuery.of(context).size.width * 0.14;
     case 2:
-      return MediaQuery.of(context).size.width * 0.33;
+      return MediaQuery.of(context).size.width * 0.3;
     case 3:
-      return MediaQuery.of(context).size.width * 0.48;
+      return MediaQuery.of(context).size.width * 0.46;
     case 4:
-      return MediaQuery.of(context).size.width * 0.63;
+      return MediaQuery.of(context).size.width * 0.62;
     case 5:
       return MediaQuery.of(context).size.width * 0.8;
   }

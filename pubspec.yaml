@@ -1,6 +1,6 @@
 name: slide_rating_dialog
 description: Introducing the Slide Rating Dialog, a customizable and interactive widget for collecting user ratings.
-version: 1.0.3
+version: 1.0.4
 repository: https://github.com/Zee604/slide_rating_dialog.git
 
 environment:
