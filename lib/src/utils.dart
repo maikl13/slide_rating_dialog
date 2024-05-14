@@ -22,15 +22,16 @@ double getWidth(BuildContext context, int a){
 String getMessage(int a){
   switch (a){
     case 1:
-      return "Worst";
+      return "سئ جدا";
     case 2:
-      return "Not Good";
+      return "غير جيد";
     case 3:
-      return "Good";
+      return "جيد";
     case 4:
-      return "Excellent";
+      return "ممتاز";
     case 5:
-      return "Out Standing";
+      return "فوق الممتاز";
   }
-  return "Excellent";
+  return "ممتاز";
 }
+
